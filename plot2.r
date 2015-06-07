@@ -7,5 +7,5 @@ png(filename = "plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
 
-with(data_feb,plot(DateTime,Global_active_power,type="l",ylab= "Global Active Power (kilowatts)"))
+with(data_feb,plot(DateTime,Global_active_power,type="l",ylab= "Global Active Power (kilowatts)",xlab=""))
 dev.off()
