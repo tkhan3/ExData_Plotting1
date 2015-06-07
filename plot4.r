@@ -8,7 +8,7 @@ png(filename = "plot4.png",
 
 attach(data_feb)
 par(mfrow=c(2,2))
-with(data_feb,plot(DateTime,Global_active_power,type="l",ylab= "Global Active Power (kilowatts)",xlab=""))
+with(data_feb,plot(DateTime,Global_active_power,type="l",ylab= "Global Active Power",xlab=""))
 with(data_feb,plot(DateTime,Voltage,type="l",ylab="Voltage",xlab="datetime"))
 with(data_feb,plot(DateTime,Sub_metering_1,type="l",ylab=" Energy sub metering",xlab="",mar=c(4,2,1,1)))
 lines(DateTime,Sub_metering_2,col="red",type="l")
