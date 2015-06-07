@@ -1,4 +1,4 @@
-if ( !"load.R" %in% list.files()
+if ( ! "load.R" %in% list.files())
 {
 setwd("C:\\Data Science\\ExData_Plotting1\\ExData_Plotting1")
 }
