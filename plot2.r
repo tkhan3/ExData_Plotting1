@@ -3,9 +3,9 @@ if ( ! "load.R" %in% list.files())
 setwd("C:\\Data Science\\ExData_Plotting1\\ExData_Plotting1")
 }
 source("load.R")
-png(filename = "plot1.png",
+png(filename = "plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
 
-with(data_feb,hist(Global_active_power,col="red",ylim=c(0,1200),main="Global Active Power",xlab=" Global Active Power  (kilowatts)"))
+with(data_feb,plot(DateTime,Global_active_power,type="l",ylab= "Global Active Power (kilowatts)"))
 dev.off()
